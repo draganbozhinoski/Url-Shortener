@@ -1,0 +1,15 @@
+spring:
+  flyway:
+    locations:
+      - classpath:db/migration
+      - classpath:db/migration-dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/url_shortener
+    username: sorsix
+    password: sorsix
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+server:
+  port: 8082
